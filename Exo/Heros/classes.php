@@ -17,20 +17,20 @@ class Classes extends Heros
 
   /**     * @return mixed     */
 
-  public function getClasses():string
+  public function getClasses()
   {
       return $this->classes;
   }
 
   /**     * @param mixed $classes     */
 
-  public function setClasses($classes):string
+  public function setClasses($classes)
   {
       $this->classes = $classes;
   }
 
 
-//Notion de if si c'est un KNIGHT ou Viking pour récuperer attaque /défense de base
+/**Notion de if si c'est un KNIGHT ou Viking pour récuperer attaque /défense de base */
     /**
      * @return mixed
      */
