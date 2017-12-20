@@ -4,7 +4,9 @@
 require 'Heros/classes.php';
 require 'Heros/classes/viking.php';
 require 'Heros/classes/knight.php';
-require 'Heros/stuff.php';
+require 'Heros/Stuff.php';
+require 'Combat.php';
+require 'Heros/classes/Combat.php';
 
 class Heros
 {
@@ -43,8 +45,45 @@ class Heros
         $this->pv = $pv;
     }
 
-    public function Combat(){
+    public function attaque() {
+      /**
+       * @return mixed
+       */
+      public function getAttaque()
+      {
+          return $this->attaque;
+      }
 
+      /**
+       * @param mixed $attaque
+       */
+      public function setAttaque($attaque)
+      {
+          $this->attaque = $attaque;
+      }
+
+      /**
+       * @return mixed
+       */
+      public function getDefence()
+      {
+          return $this->defence;
+      }
+
+      /**
+       * @param mixed $defence
+       */
+      public function setDefence($defence)
+      {
+          $this->defence = $defence;
+      }
+
+      public function attaque($pa) {
+          var_dump($this->getName());
+          $this->setPv($this->getPv() - ($pa - $this->getDefence()));
+          var_dump($this->getPv());
+          var_dump($this->getDefence());
+      }
     }
 
 
