@@ -9,7 +9,8 @@ require 'Combat.php';
 
 class Combat {
     private $joueurs = array();
-
+    private $attaque = $weapon + $strong;
+    private $defence = $armor + $resistance;
     /**
      * @return mixed
      */
