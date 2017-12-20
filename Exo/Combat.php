@@ -1,19 +1,13 @@
 <?php
 
-require 'Heros.php';
-require 'Heros/classes.php';
-require 'Heros/classes/viking.php';
-require 'Heros/classes/knight.php';
-require 'Heros/stuff.php';
-require 'Combat.php';
 
-class Combat {
+
+class Combat extends Heros{
+
     private $joueurs = array();
-    private $attaque = $weapon + $strong;
-    private $defence = $armor + $resistance;
-    /**
-     * @return mixed
-     */
+
+        /**     * @return mixed     */
+        
     public function getJoueurs()
     {
         return $this->joueurs;
@@ -43,4 +37,5 @@ class Combat {
         }
     }
 }
+
 ?>

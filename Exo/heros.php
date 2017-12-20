@@ -1,12 +1,7 @@
 <?php
 
 
-require 'Heros/classes.php';
-require 'Heros/classes/viking.php';
-require 'Heros/classes/knight.php';
-require 'Heros/Stuff.php';
-require 'Combat.php';
-require 'Heros/classes/Combat.php';
+
 
 class Heros
 {
@@ -14,15 +9,20 @@ class Heros
 
   private $pv= 100;
   private $name;
+  private $attaque;
+  private $defence;
 
-  /* Dépend du Type de classes */
-  protected $attaque;
-  protected $defence;
+  /* Dépend du Type de classes.php */
+
   protected $type;
+  protected $strong;
+  protected $resistance;
+  protected $team;
+
+  /*Dépend de stuff.php*/
   protected $stuff;
   protected $weapon;
   protected $armor;
-  protected $team;
 
 
 /** * */
@@ -60,6 +60,7 @@ class Heros
       public function setAttaque($attaque)
       {
           $this->attaque = $attaque;
+          $attaque = $weapon + $strong;
       }
 
       /**
@@ -76,6 +77,7 @@ class Heros
       public function setDefence($defence)
       {
           $this->defence = $defence;
+          $defence = $armor + $resistance;
       }
 
       public function attaque($pa) {
