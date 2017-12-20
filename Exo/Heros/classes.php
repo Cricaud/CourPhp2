@@ -50,10 +50,10 @@ class Classes extends Heros
 }
 
 
-$classes -> getClasses ();
-$classes -> setClasses ();
-$classes -> getType();
-$classes -> setType();
+$heros -> getClasses ();
+$heros  -> setClasses ();
+$heros  -> getType();
+$heros  -> setType();
 
 
  ?>
