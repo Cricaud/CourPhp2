@@ -1,5 +1,7 @@
 <<?php
 
+require 'Heros/classes/viking.php';
+require 'Heros/classes/knight.php';
 
 /**
  *
@@ -8,7 +10,8 @@ class Classes extends Heros
 {
 
   private $classes;
-
+  protected $attaque;
+  protected $defence;
 
 
   /**     * @return mixed     */
