@@ -9,6 +9,9 @@ class Stuff extends Heros
     private $armor;
     private $weapon;
 
+    protected $namearmor;
+    protected $nameweapon;
+
 
 
 
@@ -28,7 +31,7 @@ class Stuff extends Heros
         /**
          * @return mixed
          */
-        public function getArmor()
+        public function getNameArmor()
         {
             return $this->armor;
         }
@@ -36,15 +39,15 @@ class Stuff extends Heros
         /**
          * @param mixed $armor
          */
-        public function setArmor($armor)
+        public function setNameArmor($namearmor)
         {
-            $this->armor = $armor;
+            $this->armor = $namearmor;
         }
 
         /**
          * @return mixed
          */
-        public function getWeapon()
+        public function getNameWeapon()
         {
             return $this->weapon;
         }
@@ -52,9 +55,9 @@ class Stuff extends Heros
         /**
          * @param mixed $weapon
          */
-        public function setWeapon($weapon)
+        public function setNameWeapon($nameweapon)
         {
-            $this->weapon = $weapon;
+            $this->weapon = $nameweapon;
         }
 
 }
@@ -62,8 +65,8 @@ class Stuff extends Heros
 
 $hero -> getStuff ();
 $hero -> setStuff ();
-$hero -> getWeapon ();
-$hero -> getArmor ();
+$hero -> getNameWeapon ();
+$hero -> getNameArmor ();
 
 
  ?>
