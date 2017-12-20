@@ -10,6 +10,8 @@ class Stuff extends Heros
     private $weapon;
 
 
+
+
         /**     * @return mixed     */
 
         public function getStuff()
