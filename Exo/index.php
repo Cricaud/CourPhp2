@@ -2,6 +2,8 @@
 
 require 'Heros.php';
 require 'Heros/classes.php';
+require 'Heros/classes/viking.php';
+require 'Heros/classes/knight.php';
 require 'Heros/stuff.php';
 
 
