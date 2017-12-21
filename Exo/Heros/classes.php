@@ -1,8 +1,6 @@
 <<?php
 
-require 'Heros/classes/viking.php';
-require 'Heros/classes/knight.php';
-require 'hero.php';
+
 
 
 /**
@@ -30,30 +28,13 @@ class Classes extends Heros
   }
 
 
-/**Notion de if si c'est un KNIGHT ou Viking pour récuperer attaque /défense de base */
-    /**
-     * @return mixed
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
-    /**
-     * @param mixed $type
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
 
 }
 
 
 $heros -> getClasses ();
 $heros  -> setClasses ();
-$heros  -> getType();
-$heros  -> setType();
+
 
 
  ?>

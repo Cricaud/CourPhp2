@@ -6,12 +6,13 @@ class Viking extends Classes
 {
     public function __construct() {
       if(  $this->classes = Viking){
-        $this->attaque = 10;
-        $this->defence = 5;
+        $this->strong = 10;
+        $this->resistance = 5;
         $this->type = DPS;
-        $this->weapon = Axe;
-        $this ->armor = null;
+        $this->nameweapon = Axe;
+        $this ->namearmor = null;
         $this ->stuff = null;
+        $this ->team = 1;
     }
 }
 ?>
