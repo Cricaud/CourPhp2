@@ -67,6 +67,7 @@ class Form{
 		$this->addElement($select);
 		return $this;
 	}
+	?>
 
 	/**
 	 * This method draws (in HTML) the full form. It calls all the draw

@@ -28,6 +28,7 @@ class FormBuilder{
 		$form->addInput("Login", "login")
 			->addInput("Password", "password", "password")
 			->setSubmit("Go");
-		return $form;	
+		return $form;
 	}
 }
+?>
