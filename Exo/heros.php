@@ -9,8 +9,8 @@ class Heros
 
   private $pv= 100;
   private $name;
-  private $attaque;
-  private $defence;
+  protected $attaque;
+  protected $defence;
 
   /* Dépend du Type de classes.php */
 
@@ -26,7 +26,10 @@ class Heros
 
 
 /** * */
-
+class weapon {
+  private $nameweapon;
+  private pa
+}
 
 
     /**
@@ -46,9 +49,7 @@ class Heros
     }
 
     public function attaque() {
-      /**
-       * @return mixed
-       */
+    
       public function getAttaque()
       {
           return $this->attaque;

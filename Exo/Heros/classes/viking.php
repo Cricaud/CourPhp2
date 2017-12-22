@@ -9,7 +9,7 @@ class Viking extends Classes
         $this->strong = 10;
         $this->resistance = 5;
         $this->type = DPS;
-        $this->nameweapon = Axe;
+        $this->nameweapon = $axe;
         $this ->namearmor = null;
         $this ->stuff = null;
         $this ->team = 1;

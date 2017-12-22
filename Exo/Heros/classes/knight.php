@@ -9,7 +9,7 @@ class Knight extends Classes
         $this->strong = 5;
         $this->resistance = 10;
         $this->type = Tank;
-        $this->nameweapon = Sword;
+        $this->nameweapon = $sword;
         $this ->namearmor = Plastron;
         $this ->stuff = null;
         $this ->team = 2;
