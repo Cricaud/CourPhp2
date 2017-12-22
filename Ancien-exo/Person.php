@@ -1,49 +1,31 @@
 <?php
+    class Person {
+        private $firstName;
+        private $lastName;
 
-class Person
-{
-    private $firstname;
-    private $lastname;
+        public function getFirstName():string {
+            return $this->firstName;
+        }
 
-    public function getFirstname():string
-    {
-        return $this->firstname;
+        public function setFirstName(string $firstName) {
+            $this->firstName = $firstName;
+        }
+
+        public function getLastName():string  {
+            return $this->lastName;
+        }
+
+        public function setLastName(string $lastName) {
+            $this->lastName = $lastName;
+        }
+
+        public function display():string  {
+            return 'Hello ' . $this->firstName . ' ' . $this->lastName;
+        }
     }
 
-
-    public function setFirstname($firstname):string
-    {
-        $this->firstname = $firstname;
-    }
-
-
-    public function getLastname():string
-    {
-        return $this->lastname;
-    }
-
-
-    public function setLastname($lastname):string
-    {
-        $this->lastname = $lastname;
-    }
-
-
-    public function Display():string{
-        return " Bonjour " .$this->firstname .$this->lastname;
-
-    }
-
-}
-
-$person = new Person();
-$person -> setFirstname ("John");
-$person -> getFirstname ();
-
-$person -> setLastname("Doe");
-$person -> getLastname();
-
-
-var_dump ($person ->$display);
-
+    $person = new Person();
+    $person->setFirstName('Cecile');
+    $person->setLastName('Livet');
+    var_dump($person->display());
 ?>
