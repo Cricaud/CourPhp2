@@ -14,9 +14,9 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<title>Form Builder</title>
+	<title>Formulaire</title>
 </head>
-<body>
+<body> <p> Joyeuses Fêtes de fin d'année </P>
 	<?php $form->draw();
         $form2->draw();?>
 </body>
