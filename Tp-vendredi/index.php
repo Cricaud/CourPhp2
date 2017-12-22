@@ -5,6 +5,8 @@
 
 	$fb = new FormBuilder();
 	$form = $fb->buildContactForm();
+  $fb2 = new LoginForm();
+  $form2 = $fb2->buildLoginForm();
 
 ?>
 
@@ -15,6 +17,7 @@
 	<title>Form Builder</title>
 </head>
 <body>
-	<?php $form->draw(); ?>
+	<?php $form->draw();
+        $form2->draw();?>
 </body>
 </html>
